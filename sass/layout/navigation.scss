@@ -1,0 +1,26 @@
+.navigation {
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 6rem;
+        list-style: none;
+    }
+
+    &__link {
+        text-decoration: none;
+
+        font-family: $font-primary;
+        font-size: 2rem;
+        font-weight: 500;
+        color: $color-gray;
+
+        &--1 {
+            color: $color-light-blue-1;
+            background-color: rgba($color-light-blue-1,.05);
+            padding: 1rem 2.2rem; 
+            border-radius: 8px;
+        }
+
+    }
+}
