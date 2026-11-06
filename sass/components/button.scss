@@ -1,0 +1,14 @@
+.hero {
+     &__button {
+        text-decoration: none;
+        font-family: $font-primary;
+        font-size: 2rem;
+        font-weight: 500;
+        color: $color-withe;
+
+        background-color: $color-light-blue-1;
+        border-radius: 8px;
+        padding: 1.3rem 3.3rem;
+        margin-bottom: 5rem;
+    }
+}

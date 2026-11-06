@@ -17,6 +17,24 @@ body {
   font-weight: 400;
 }
 
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 7rem;
+  font-weight: 400;
+}
+
+.hero__button {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(225, 225, 225);
+  background-color: rgb(41, 169, 225);
+  border-radius: 8px;
+  padding: 1.3rem 3.3rem;
+  margin-bottom: 5rem;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -58,6 +76,67 @@ body {
   background-color: rgba(41, 169, 225, 0.05);
   padding: 1rem 2.2rem;
   border-radius: 8px;
+}
+
+.hero {
+  background-color: rgba(225, 225, 225, 0.1);
+  margin: 4rem;
+  padding: 10rem;
+  border-radius: 2px;
+}
+.hero__content {
+  display: grid;
+  grid-template-columns: 55% 35%;
+  align-items: center;
+  gap: 3rem;
+}
+.hero__title {
+  margin-bottom: 5rem;
+  width: 50.6rem;
+  line-height: 11rem;
+}
+.hero__description {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: rgb(121, 137, 158);
+  margin-bottom: 5rem;
+  line-height: 4rem;
+}
+.hero__img {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.hero__img img {
+  width: 29.8rem;
+  height: 26.8rem;
+}
+.hero__stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  list-style: none;
+  margin-top: 8rem;
+}
+.hero__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero__stat--number {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 4.2rem;
+  color: rgb(51, 65, 85);
+}
+.hero__stat--label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: rgba(121, 137, 158, 0.8);
 }
 
 /*# sourceMappingURL=style.css.map */
