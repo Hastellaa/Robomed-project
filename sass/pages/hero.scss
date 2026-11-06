@@ -51,6 +51,18 @@
         margin-bottom: 5rem;
         width: 50.6rem;
         line-height: 11rem;
+
+        &--word {
+            position: relative;
+        }
+
+        &--icon {
+            position: absolute;
+            width:4rem;
+            height: 4rem;
+            top: -.5rem;
+            right: -4rem;
+        }
     }
 
     &__description {
