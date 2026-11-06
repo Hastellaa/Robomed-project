@@ -83,6 +83,19 @@ h1 {
   margin: 4rem;
   padding: 10rem;
   border-radius: 2px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle 34rem at 0% 5%, #29a9e1, transparent 100%), radial-gradient(circle 60rem at 30% 70%, #334155, transparent 100%), radial-gradient(circle 40rem at 100% 100%, #29a9e1, transparent 100%), radial-gradient(circle 40rem at 70% 60%, #ffd964, transparent 100%);
+  opacity: 30%;
+  filter: blur(200px);
+  z-index: -1;
+  pointer-events: none;
 }
 .hero__content {
   display: grid;
