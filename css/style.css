@@ -308,4 +308,135 @@ h1 {
   position: absolute;
 }
 
+.testimonial {
+  margin-top: 15rem;
+}
+.testimonial__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(41, 169, 225);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.testimonial__heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: rgb(51, 65, 85);
+  text-align: center;
+}
+.testimonial__stage {
+  position: relative;
+}
+.testimonial__img--1 {
+  position: absolute;
+  width: 5rem;
+  height: auto;
+  top: 5rem;
+  right: 8rem;
+}
+.testimonial__img--2 {
+  position: absolute;
+  width: 3.9rem;
+  height: auto;
+  top: 16rem;
+  right: 6rem;
+}
+.testimonial__glow {
+  position: absolute;
+  width: 14.6rem;
+  height: 14.6rem;
+  border-radius: 50%;
+  background: #29a9e1;
+  opacity: 10%;
+  z-index: -10;
+  top: 7rem;
+  right: -5rem;
+}
+.testimonial__card {
+  background-color: rgba(255, 255, 255, 0.01);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  margin: 5rem 21rem;
+  position: relative;
+}
+.testimonial__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  isolation: isolate;
+  background-image: radial-gradient(ellipse 21rem 27rem at 10% 90%, #29a9e1, transparent 100%), radial-gradient(circle 30rem at 30% 70%, #ffd964, transparent 70%), radial-gradient(circle 27rem at 60% 70%, #ffd964, transparent 60%), radial-gradient(ellipse 28rem 25rem at 90% 20%, #334155, transparent 100%);
+  opacity: 100%;
+  filter: blur(200px);
+  z-index: -1;
+  pointer-events: none;
+}
+.testimonial__card--dots {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 2rem;
+}
+.testimonial__card--dots span {
+  width: 0.78rem;
+  height: 0.84rem;
+  background-color: rgb(41, 169, 225);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+.testimonial__card--dots span:nth-child(2) {
+  opacity: 1;
+}
+.testimonial__card--text {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgb(121, 137, 158);
+  line-height: 3.5rem;
+  margin-bottom: 2rem;
+}
+.testimonial__card--title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: rgb(51, 65, 85);
+}
+.testimonial__card--img {
+  width: 13rem;
+  height: auto;
+  background-color: rgb(41, 169, 225);
+  overflow: center-box;
+}
+.testimonial__card--icon {
+  position: absolute;
+  top: -2.7rem;
+  left: 18rem;
+}
+.testimonial__card--icon img {
+  width: 3.3rem;
+  height: 3.6rem;
+}
+.testimonial__avatar {
+  position: relative;
+  width: 13rem;
+  height: 13rem;
+  flex-shrink: 0;
+}
+.testimonial__avatar--bg {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(41, 169, 225);
+  border-radius: 33%;
+}
+.testimonial__avatar--img {
+  position: absolute;
+  object-fit: contain;
+  z-index: 1;
+}
+
 /*# sourceMappingURL=style.css.map */

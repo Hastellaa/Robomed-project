@@ -1,0 +1,177 @@
+.testimonial {
+
+    margin-top: 15rem;
+
+    &__subtitle {
+        font-family: $font-primary;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $color-light-blue-1;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    &__heading {
+        font-family: $font-display;
+        font-size: 3.2rem;
+        font-weight: 400;
+        color: $color-dark-blue-1;
+        text-align: center;
+    }
+
+    &__stage {
+        position: relative;
+
+    }
+
+    &__img {
+
+        &--1 {
+            position: absolute;
+            width: 5rem;
+            height: auto;
+            top: 5rem;
+            right: 8rem;
+        }
+
+        &--2 {
+            position: absolute;
+            width: 3.9rem;
+            height: auto;
+            top: 16rem;
+            right: 6rem;
+        }
+    }
+
+    &__glow {
+        position: absolute;
+        width: 14.6rem;
+        height: 14.6rem;
+        border-radius: 50%;
+        background: rgba($color-light-blue-1, 1);
+        opacity: 10%;
+        z-index: -10;
+        top: 7rem;
+        right: -5rem;
+    }
+
+    &__card {
+        background-color: rgba($color-withe-1, .01);
+        border: 2px solid $color-withe-1;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        padding: 2rem;
+        margin: 5rem 21rem;
+        position: relative;
+
+         &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        isolation: isolate;
+
+        background-image:
+            radial-gradient( ellipse 21rem 27rem at 10% 90%,
+                rgba($color-light-blue-1, 1),
+                transparent 100%),
+
+                radial-gradient(circle 30rem at 30% 70%,
+                rgba($color-yellow, 1),
+                transparent 70%),
+                
+                radial-gradient(circle 27rem at 60% 70%,
+                rgba($color-yellow, 1),
+                transparent 60%),
+
+                radial-gradient(ellipse 28rem 25rem at 90% 20%,
+                rgba($color-dark-blue-1, 1),
+                transparent 100%)
+                ;
+
+        opacity: 100%;
+        filter: blur(200px);
+        z-index: -1;
+        pointer-events: none;
+    }
+
+        &--content {}
+
+        &--dots {
+            display: flex;
+            align-items: center;
+            gap: .4rem;
+            margin-bottom: 2rem;
+
+            span {
+                width: .78rem;
+                height: .84rem;
+                background-color: $color-light-blue-1;
+                border-radius: 50%;
+                opacity: .3;
+
+                &:nth-child(2) {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &--text {
+            font-family: $font-primary;
+            font-size: 2rem;
+            font-weight: 300;
+            color: $color-gray;
+            line-height: 3.5rem;
+            margin-bottom: 2rem;
+
+        }
+
+        &--title {
+            font-family: $font-primary;
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: $color-dark-blue-1;
+
+        }
+
+        &--img {
+            width: 13rem;
+            height: auto;
+            background-color: $color-light-blue-1;
+            overflow: center-box;
+        }
+
+        &--icon {
+            position: absolute;
+            top: -2.7rem;
+            left: 18rem;
+
+            img {
+                width: 3.3rem;
+                height: 3.6rem;
+            }
+        }
+
+    }
+
+    &__avatar {
+        position: relative;
+        width: 13rem;
+        height: 13rem;
+        flex-shrink: 0;
+    }
+
+    &__avatar--bg {
+        position: absolute;
+        inset: 0;
+        background-color: $color-light-blue-1;
+        border-radius: 33%;
+    }
+
+    &__avatar--img {
+        position: absolute;
+        object-fit: contain;
+        z-index: 1;
+    }
+}
