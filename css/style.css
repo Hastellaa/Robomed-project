@@ -439,4 +439,60 @@ h1 {
   z-index: 1;
 }
 
+.team {
+  margin-top: 15rem;
+}
+.team__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(41, 169, 225);
+  text-align: center;
+}
+.team__heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: rgb(51, 65, 85);
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.team__card {
+  width: 98rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10rem, 30rem));
+  gap: 3rem;
+  justify-items: center;
+}
+.team__card--item {
+  list-style: none;
+  background-color: rgba(188, 188, 188, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+.team__card--img {
+  margin-bottom: 3rem;
+}
+.team__card--img img {
+  width: 26rem;
+  height: auto;
+}
+.team__card--heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(51, 65, 85);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.team__card--subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(41, 169, 225);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */

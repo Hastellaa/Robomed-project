@@ -1,0 +1,67 @@
+.team {
+
+    margin-top: 15rem;
+    &__subtitle {
+        font-family: $font-primary;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $color-light-blue-1;
+        text-align: center;
+    }
+
+    &__heading {
+        font-family: $font-display;
+        font-size: 3.2rem;
+        font-weight: 400;
+        color: $color-dark-blue-1;
+        text-align: center;
+        margin-bottom: 8rem;
+
+    }
+
+    &__card {
+        width: 98rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3 , minmax(10rem,30rem));
+        gap: 3rem;
+        justify-items: center;
+
+        &--item {
+            list-style: none;
+            background-color: rgba($color-light-gray, .1);
+            border-radius: 8px;
+            padding: 1.5rem;
+           
+        }
+
+        &--img {
+            margin-bottom: 3rem;
+
+            img{
+            width: 26rem;
+            height: auto;
+            }
+        }
+
+        &--heading {
+            font-family: $font-display;
+            font-size: 2rem;
+            font-weight: 400;
+            color: $color-dark-blue-1;
+            text-align: center;
+            margin-bottom: 1.5rem;
+
+        }
+
+        &--subtitle {
+            font-family: $font-primary;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $color-light-blue-1;
+            text-align: center;
+            margin-bottom: 1.5rem;
+
+        }
+    }
+}
