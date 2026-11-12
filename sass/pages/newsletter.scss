@@ -1,0 +1,79 @@
+.newsletter {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 15rem;
+
+    &__content {}
+
+    &__subtitle {
+        font-family: $font-primary;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $color-light-blue-1;
+        text-align: start;
+        margin-bottom: 1rem;
+    }
+
+    &__heading {
+        font-family: $font-display;
+        font-size: 3.2rem;
+        font-weight: 400;
+        color: $color-dark-blue-1;
+        text-align: start;
+    }
+
+    &__line {
+        display: block;
+        width: 20.6rem;
+        height: 1.26rem;
+        margin: 3rem auto 0;
+    }
+
+    &__form {
+        background-color: rgba($color-light-gray , .1);
+        width: 62.2rem;
+        height: 8.2rem;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        border-radius: 8px;
+        padding: .5rem 2rem;
+    }
+
+    &__icon {
+        width: 3.2rem;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    &__input {
+        font-family: $font-primary;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $color-dark-blue-1;
+        flex: 1;
+        border: none;
+        outline: none;
+        background: transparent;
+
+        &::placeholder {
+            color: $color-gray;
+        }
+
+    }
+
+    &__button {
+        font-family: $font-primary;
+        font-size: 2rem;
+        font-weight: 600;
+        color: $color-withe-1;
+        background-color: $color-light-blue-1;
+        border-radius: 8px;
+        width: 15.4rem;
+        height: 6.8rem;
+        border: none;
+    }
+}

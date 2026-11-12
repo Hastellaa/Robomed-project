@@ -1,6 +1,7 @@
 .team {
 
     margin-top: 15rem;
+    
     &__subtitle {
         font-family: $font-primary;
         font-size: 1.6rem;
@@ -31,7 +32,7 @@
             list-style: none;
             background-color: rgba($color-light-gray, .1);
             border-radius: 8px;
-            padding: 1.5rem;
+            padding: 2rem;
            
         }
 
