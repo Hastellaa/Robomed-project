@@ -18,18 +18,17 @@
                 rgba($color-light-blue-1, 1),
                 transparent 100%),
 
-                radial-gradient(circle 60rem at 30% 70%,
+            radial-gradient(circle 60rem at 30% 70%,
                 rgba($color-dark-blue-1, 1),
                 transparent 100%),
-                
-                radial-gradient(circle 40rem at 100% 100%,
+
+            radial-gradient(circle 40rem at 100% 100%,
                 rgba($color-light-blue-1, 1),
                 transparent 100%),
 
-                radial-gradient(circle 40rem at 70% 60%,
+            radial-gradient(circle 40rem at 70% 60%,
                 rgba($color-yellow, 1),
-                transparent 100%)
-                ;
+                transparent 100%);
 
         opacity: 30%;
         filter: blur(200px);
@@ -52,13 +51,15 @@
         width: 50.6rem;
         line-height: 11rem;
 
+        max-width: 100%;
+
         &--word {
             position: relative;
         }
 
         &--icon {
             position: absolute;
-            width:4rem;
+            width: 4rem;
             height: 4rem;
             top: -.5rem;
             right: -4rem;
@@ -82,6 +83,9 @@
         img {
             width: 29.8rem;
             height: 26.8rem;
+
+            max-width: 100%;
+            height: auto;
         }
     }
 

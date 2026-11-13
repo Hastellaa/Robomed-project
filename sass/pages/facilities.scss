@@ -29,7 +29,6 @@
 
     &__list {
         display: flex;
-        align-items: stretch;
         justify-content: center;
         gap: 2rem;
         width: max-content;
@@ -37,10 +36,13 @@
         left: 50%;
         transform: translateX(-50%);
         list-style: none;
-        padding: 0;
-        margin: 0;
+
+        flex-wrap: wrap;
+        max-width: 158rem;
+        margin-inline: auto;
+
 
     }
 
-    
+
 }

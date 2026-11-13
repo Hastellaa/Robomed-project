@@ -51,6 +51,8 @@
 
         margin: 4rem 7rem;
         width: 60rem;
+
+        min-width: 0;
     }
 
     &__title {
@@ -74,6 +76,8 @@
         align-items: center;
         gap: 2rem;
         margin-top: 3rem;
+
+        flex-wrap: wrap;
     }
 
     &__social {
@@ -102,6 +106,8 @@
     &__contact {
         flex: 0 0 35%;
 
+        min-width: 0;
+
         &--list {
             font-family: $font-primary;
             font-size: 1.2rem;
@@ -120,11 +126,17 @@
             justify-content: start;
             align-items: center;
             gap: 1rem;
+
+            span {
+                 overflow-wrap: anywhere;
+            }
         }
 
         &--icon {
             width: 2.4rem;
             height: auto;
+
+            flex-shrink: 0;
         }
     }
 

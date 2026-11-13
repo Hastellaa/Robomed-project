@@ -1,0 +1,424 @@
+@media (max-width: 75em) {
+
+    .header {
+        gap: 2rem;
+        padding: 2.5rem 4rem;
+    }
+
+    .navigation {
+
+        &__list {
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 1rem 2.5rem;
+        }
+
+        &__link {
+            display: inline-block;
+            font-size: 1.6rem;
+        }
+    }
+
+    .hero {
+        padding: 5rem;
+
+
+        &__content {
+            grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+        }
+
+        &__title {
+            font-size: clamp(3.6rem, 5.5vw, 7rem);
+            line-height: 1.2;
+            margin-bottom: 2.5rem;
+        }
+
+        &__description {
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+        }
+
+        &__button {
+            margin-bottom: 0;
+        }
+
+        &__stats {
+            gap: 3rem;
+            margin-top: 5rem;
+        }
+    }
+
+    .testimonial__card {
+        margin-inline: 10rem;
+    }
+
+    .newsletter {
+
+        &__form {
+            height: auto;
+            padding: 1rem;
+        }
+
+        &__icon,
+        &__button {
+            margin: 0;
+        }
+
+        &__button {
+            flex-shrink: 0;
+        }
+    }
+
+    .footer {
+
+        &__content {
+            gap: 3rem;
+            padding-inline: 4rem;
+        }
+
+        &__brand {
+            margin: 0;
+        }
+
+        &__bottom {
+            margin-top: 3rem;
+        }
+    }
+}
+
+@media (max-width: 56.25em) {
+
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem;
+    }
+
+    .navigation {
+        width: 100%;
+
+        &__list {
+            justify-content: center;
+        }
+    }
+
+    .hero {
+        margin-inline: 2rem;
+        padding: 4rem 3rem;
+
+
+        &__title--word {
+            display: inline-block;
+            padding-inline-end: .55em;
+        }
+
+        &__title--icon {
+            width: .55em;
+            height: auto;
+            top: -.1em;
+            right: 0;
+        }
+    }
+
+    .facilities {
+
+        &__subtitle {
+            margin-top: 8rem;
+            padding-inline: 2rem;
+        }
+
+        &__heading {
+            padding-inline: 2rem;
+        }
+
+        &__list {
+            width: 100%;
+            position: static;
+            transform: none;
+            flex-wrap: wrap;
+            row-gap: 3.5rem;
+        }
+
+        &__card {
+            flex-basis: calc((100% - 4rem) / 3);
+        }
+    }
+
+    .testimonial {
+        margin-top: 8rem;
+
+
+        &__heading {
+            padding-inline: 2rem;
+        }
+
+        &__card {
+            margin-inline: 5rem;
+
+            &--text {
+                font-size: 1.6rem;
+                line-height: 1.7;
+            }
+        }
+    }
+
+    .team {
+        margin-top: 8rem;
+
+        &__heading {
+            padding-inline: 2rem;
+
+        }
+
+        &__heading {
+            margin-bottom: 4rem;
+        }
+
+        &__card {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            max-width: 65rem;
+            gap: 2rem;
+        }
+    }
+
+    .newsletter {
+        margin-top: 8rem;
+        flex-direction: column;
+        text-align: center;
+
+
+        &__subtitle,
+        &__heading {
+            text-align: center;
+        }
+
+        &__line {
+            margin-top: 1.5rem;
+        }
+
+        &__form {
+            width: min(100%, 62.2rem);
+        }
+    }
+
+    .footer {
+        margin: 5rem 2rem 2rem;
+
+
+        &__content {
+            padding-inline: 2.5rem;
+        }
+
+        &__contact {
+            flex-basis: 42%;
+        }
+
+        &__bottom {
+            margin-inline: 2.5rem;
+        }
+    }
+}
+
+@media (max-width: 37.5em) {
+
+    .header__logo--icon {
+        width: 4.2rem;
+        height: auto;
+    }
+
+    .navigation__list {
+        gap: .5rem 1.5rem;
+
+        &__link {
+            padding-block: .7rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    .hero {
+        margin-inline: 1.5rem;
+        padding: 3rem 2rem;
+
+
+        &__content {
+            grid-template-columns: minmax(0, 1fr);
+            text-align: center;
+        }
+
+        &__title {
+            width: auto;
+            font-size: clamp(3.2rem, 8.5vw, 4.5rem);
+        }
+
+        &__description {
+            font-size: 1.6rem;
+        }
+
+        &__img {
+            justify-content: center;
+        }
+
+        &__img img {
+            width: min(70%, 24rem);
+        }
+
+        &__stats {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: .8rem;
+            margin-top: 3rem;
+        }
+
+        &__stat--number {
+            font-size: 3rem;
+        }
+
+        &__stat--label {
+            font-size: 1.3rem;
+            overflow-wrap: anywhere;
+        }
+    }
+
+    .facilities {
+
+        &__list {
+            column-gap: 1.2rem;
+        }
+
+        &__card {
+            flex-basis: calc((100% - 1.2rem) / 2);
+            min-height: 0;
+            padding: 2rem 1rem 1.2rem;
+
+
+            &::before {
+                height: .8rem;
+            }
+
+            &--title {
+                font-size: 1.4rem;
+            }
+
+            &--description {
+                line-height: 1.6;
+                word-spacing: normal;
+            }
+        }
+    }
+
+    .testimonial {
+
+        &__box {
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 3rem 2rem;
+            text-align: center;
+        }
+
+
+        &__avatar {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        &__box--dots {
+            justify-content: center;
+            margin-bottom: 1.2rem;
+        }
+
+        &__box--icon {
+            top: -2.3rem;
+            transform: translateX(-18rem);
+        }
+
+        &__decorations {
+            width: 6rem;
+            height: 5.5rem;
+            transform: translateX(-2rem);
+        }
+
+        &__glow {
+            width: 10rem;
+            height: 10rem;
+            transform: translateX(-5rem);
+        }
+    }
+
+    .team {
+
+        &__card {
+            gap: 1.2rem;
+        }
+
+        &__card {
+            gap: 1.2rem;
+
+
+            &--item {
+                padding: 1.2rem;
+            }
+
+            &--img {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .newsletter {
+
+        &__form {
+            display: grid;
+            grid-template-columns: auto minmax(0, 1fr);
+            padding: 1.2rem;
+            gap: 1.2rem;
+        }
+
+        &__icon {
+            width: 2.4rem;
+        }
+
+        &__input {
+            width: 100%;
+            min-height: 4.4rem;
+            font-size: 1.6rem;
+        }
+
+        &__button {
+            grid-column: 1 / -1;
+            width: 100%;
+            height: auto;
+            min-height: 4.4rem;
+        }
+    }
+
+    .footer {
+        &__content {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        &__brand {
+            width: auto;
+        }
+
+        &__contact {
+            flex-basis: auto;
+        }
+
+        &__contact--list {
+            gap: 1.5rem;
+        }
+
+        &__copyright {
+            font-size: 1.3rem;
+            line-height: 1.6;
+        }
+    }
+}
+
+@media (max-width: 25em) {
+    .team__card {
+        grid-template-columns: minmax(0, 1fr);
+        max-width: 30rem;
+    }
+}

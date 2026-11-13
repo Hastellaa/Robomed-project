@@ -6,6 +6,8 @@
     gap: 2rem;
     margin-top: 15rem;
 
+    padding-inline: 2rem;
+
     &__content {}
 
     &__subtitle {
@@ -30,6 +32,8 @@
         width: 20.6rem;
         height: 1.26rem;
         margin: 3rem auto 0;
+
+        max-width: 100%;
     }
 
     &__form {
@@ -40,7 +44,9 @@
         align-items: center;
         gap: 1.5rem;
         border-radius: 8px;
-      
+
+        min-width: 0;
+
     }
 
     &__icon {
@@ -60,8 +66,16 @@
         outline: none;
         background: transparent;
 
+        min-width: 0;
+        min-width: 0;
+
         &::placeholder {
             color: $color-gray;
+        }
+
+        &:focus-visible {
+            outline: 2px solid $color-dark-blue-1;
+            outline-offset: -2px;
         }
 
     }

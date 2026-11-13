@@ -5,7 +5,8 @@
         flex-direction: column;
         align-items: flex-start;
         flex: 0 0 30rem;
-        height: 22rem;
+        height: auto;
+        min-height: 22rem;
         background-color: $color-withe-1;
         border: 1px solid rgba($color-light-gray, .5);
         border-radius: 8px;
@@ -146,16 +147,26 @@
         gap: 3rem;
         justify-items: center;
 
+        width: min(96rem, calc(100% - 4rem));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
         &--item {
             list-style: none;
             background-color: rgba($color-light-gray, .1);
             border-radius: 8px;
             padding: 2rem;
 
+            width: 100%;
+            min-width: 0;
+
         }
 
         &--img {
             margin-bottom: 3rem;
+
+            display: block;
+            width: 100%;
+            height: auto;
 
             img {
                 width: 26rem;
