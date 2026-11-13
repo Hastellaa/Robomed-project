@@ -59,6 +59,156 @@ h1 {
   transform: translateY(-0.025rem);
 }
 
+.facilities__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 0 30rem;
+  height: 22rem;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(188, 188, 188, 0.5);
+  border-radius: 8px;
+  position: relative;
+  overflow: visible;
+}
+.facilities__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.3rem;
+}
+.facilities__card--blue::before {
+  background-color: rgb(41, 169, 225);
+}
+.facilities__card--yellow::before {
+  background-color: rgb(255, 217, 100);
+}
+.facilities__card--title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+.facilities__card--icon {
+  width: 1.9rem;
+  height: 1.4rem;
+}
+.facilities__card--description {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  line-height: 2.5rem;
+  word-spacing: 0.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: rgba(121, 137, 158, 0.8);
+}
+.facilities__card--tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.32rem 0.9rem;
+  border-radius: 8px;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.facilities__card--tag1 {
+  background-color: rgba(41, 169, 225, 0.1);
+  color: rgb(41, 169, 225);
+}
+.facilities__card--tag2 {
+  background-color: rgba(51, 65, 85, 0.1);
+  color: rgb(51, 65, 85);
+}
+.facilities__card--tag::before {
+  content: "";
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+}
+.facilities__card--tag1::before {
+  background-color: rgb(41, 169, 225);
+}
+.facilities__card--tag2::before {
+  background-color: rgb(51, 65, 85);
+}
+.facilities__card--img {
+  width: 5.4rem;
+  height: 5.4rem;
+  transform: translate(25rem, 4rem);
+}
+.facilities__card--line {
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+  top: -4rem;
+  left: -3rem;
+}
+.facilities__card--line img {
+  width: 8.3rem;
+  height: 1.1rem;
+}
+.facilities__card--glow {
+  position: absolute;
+  inset: 0;
+  width: 12.6rem;
+  height: 12.6rem;
+  border-radius: 50%;
+  background: #29a9e1;
+  opacity: 10%;
+  z-index: -10;
+  top: -4rem;
+  left: -7rem;
+}
+.facilities__card__decoration {
+  position: absolute;
+}
+
+.team__card {
+  width: 98rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10rem, 30rem));
+  gap: 3rem;
+  justify-items: center;
+}
+.team__card--item {
+  list-style: none;
+  background-color: rgba(188, 188, 188, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+}
+.team__card--img {
+  margin-bottom: 3rem;
+}
+.team__card--img img {
+  width: 26rem;
+  height: auto;
+}
+.team__card--heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(51, 65, 85);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.team__card--subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(41, 169, 225);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 .footer {
   margin: 5rem;
   padding: 3rem 0;
@@ -329,117 +479,6 @@ h1 {
   padding: 0;
   margin: 0;
 }
-.facilities__card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 0 0 30rem;
-  height: 22rem;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgba(188, 188, 188, 0.5);
-  border-radius: 8px;
-  position: relative;
-  overflow: visible;
-}
-.facilities__card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1.3rem;
-}
-.facilities__card--blue::before {
-  background-color: rgb(41, 169, 225);
-}
-.facilities__card--yellow::before {
-  background-color: rgb(255, 217, 100);
-}
-.facilities__card--title {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-top: 4rem;
-  margin-left: 2rem;
-}
-.facilities__card--icon {
-  width: 1.9rem;
-  height: 1.4rem;
-}
-.facilities__card--description {
-  margin-left: 2rem;
-  margin-top: 0.5rem;
-  line-height: 2.5rem;
-  word-spacing: 0.3rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 1.2rem;
-  color: rgba(121, 137, 158, 0.8);
-}
-.facilities__card--tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.32rem 0.9rem;
-  border-radius: 8px;
-  margin-left: 2rem;
-  margin-top: 2rem;
-}
-.facilities__card--tag1 {
-  background-color: rgba(41, 169, 225, 0.1);
-  color: rgb(41, 169, 225);
-}
-.facilities__card--tag2 {
-  background-color: rgba(51, 65, 85, 0.1);
-  color: rgb(51, 65, 85);
-}
-.facilities__card--tag::before {
-  content: "";
-  display: block;
-  width: 0.6rem;
-  height: 0.6rem;
-  border-radius: 50%;
-}
-.facilities__card--tag1::before {
-  background-color: rgb(41, 169, 225);
-}
-.facilities__card--tag2::before {
-  background-color: rgb(51, 65, 85);
-}
-.facilities__card--img {
-  width: 5.4rem;
-  height: 5.4rem;
-  transform: translate(25rem, 4rem);
-}
-.facilities__card--line {
-  position: absolute;
-  z-index: 100;
-  pointer-events: none;
-  top: -4rem;
-  left: -3rem;
-}
-.facilities__card--line img {
-  width: 8.3rem;
-  height: 1.1rem;
-}
-.facilities__card--glow {
-  position: absolute;
-  inset: 0;
-  width: 12.6rem;
-  height: 12.6rem;
-  border-radius: 50%;
-  background: #29a9e1;
-  opacity: 10%;
-  z-index: -10;
-  top: -4rem;
-  left: -7rem;
-}
-.facilities__card__decoration {
-  position: absolute;
-}
 
 .testimonial {
   margin-top: 15rem;
@@ -487,7 +526,7 @@ h1 {
   top: 7rem;
   right: -5rem;
 }
-.testimonial__card {
+.testimonial__box {
   background-color: rgba(255, 255, 255, 0.01);
   border: 2px solid rgb(255, 255, 255);
   border-radius: 8px;
@@ -498,7 +537,7 @@ h1 {
   margin: 5rem 21rem;
   position: relative;
 }
-.testimonial__card::before {
+.testimonial__box::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -509,23 +548,23 @@ h1 {
   z-index: -1;
   pointer-events: none;
 }
-.testimonial__card--dots {
+.testimonial__box--dots {
   display: flex;
   align-items: center;
   gap: 0.4rem;
   margin-bottom: 2rem;
 }
-.testimonial__card--dots span {
+.testimonial__box--dots span {
   width: 0.78rem;
   height: 0.84rem;
   background-color: rgb(41, 169, 225);
   border-radius: 50%;
   opacity: 0.3;
 }
-.testimonial__card--dots span:nth-child(2) {
+.testimonial__box--dots span:nth-child(2) {
   opacity: 1;
 }
-.testimonial__card--text {
+.testimonial__box--text {
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   font-weight: 300;
@@ -533,24 +572,24 @@ h1 {
   line-height: 3.5rem;
   margin-bottom: 2rem;
 }
-.testimonial__card--title {
+.testimonial__box--title {
   font-family: "Poppins", sans-serif;
   font-size: 2.4rem;
   font-weight: 500;
   color: rgb(51, 65, 85);
 }
-.testimonial__card--img {
+.testimonial__box--img {
   width: 13rem;
   height: auto;
   background-color: rgb(41, 169, 225);
   overflow: center-box;
 }
-.testimonial__card--icon {
+.testimonial__box--icon {
   position: absolute;
   top: -2.7rem;
   left: 18rem;
 }
-.testimonial__card--icon img {
+.testimonial__box--icon img {
   width: 3.3rem;
   height: 3.6rem;
 }
@@ -589,43 +628,6 @@ h1 {
   color: rgb(51, 65, 85);
   text-align: center;
   margin-bottom: 8rem;
-}
-.team__card {
-  width: 98rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(10rem, 30rem));
-  gap: 3rem;
-  justify-items: center;
-}
-.team__card--item {
-  list-style: none;
-  background-color: rgba(188, 188, 188, 0.1);
-  border-radius: 8px;
-  padding: 2rem;
-}
-.team__card--img {
-  margin-bottom: 3rem;
-}
-.team__card--img img {
-  width: 26rem;
-  height: auto;
-}
-.team__card--heading {
-  font-family: "DM Serif Display", serif;
-  font-size: 2rem;
-  font-weight: 400;
-  color: rgb(51, 65, 85);
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-.team__card--subtitle {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: rgb(41, 169, 225);
-  text-align: center;
-  margin-bottom: 1.5rem;
 }
 
 .newsletter {
