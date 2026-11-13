@@ -40,13 +40,14 @@
         align-items: center;
         gap: 1.5rem;
         border-radius: 8px;
-        padding: .5rem 2rem;
+      
     }
 
     &__icon {
         width: 3.2rem;
         height: auto;
         flex-shrink: 0;
+        margin-left: 2rem;
     }
 
     &__input {
@@ -65,15 +66,4 @@
 
     }
 
-    &__button {
-        font-family: $font-primary;
-        font-size: 2rem;
-        font-weight: 600;
-        color: $color-withe-1;
-        background-color: $color-light-blue-1;
-        border-radius: 8px;
-        width: 15.4rem;
-        height: 6.8rem;
-        border: none;
-    }
 }

@@ -5,10 +5,37 @@
         font-size: 2rem;
         font-weight: 500;
         color: $color-withe;
-
+        border: none;
         background-color: $color-light-blue-1;
         border-radius: 8px;
         padding: 1.3rem 3.3rem;
         margin-bottom: 5rem;
+    }
+}
+
+.newsletter {
+    &__button {
+        font-family: $font-primary;
+        font-size: 2rem;
+        font-weight: 600;
+        color: $color-withe-1;
+        background-color: $color-light-blue-1;
+        border-radius: 8px;
+        width: 15.4rem;
+        height: 6.8rem;
+        border: none;
+        margin-right: 1rem;
+    }
+
+}
+
+.button {
+    transition: all .2s;
+    &:hover {
+        transform: translateY(-.25rem);
+    }
+
+    &:active{
+        transform: translateY(-.025rem);
     }
 }

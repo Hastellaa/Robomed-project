@@ -29,10 +29,34 @@ h1 {
   font-size: 2rem;
   font-weight: 500;
   color: rgb(225, 225, 225);
+  border: none;
   background-color: rgb(41, 169, 225);
   border-radius: 8px;
   padding: 1.3rem 3.3rem;
   margin-bottom: 5rem;
+}
+
+.newsletter__button {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background-color: rgb(41, 169, 225);
+  border-radius: 8px;
+  width: 15.4rem;
+  height: 6.8rem;
+  border: none;
+  margin-right: 1rem;
+}
+
+.button {
+  transition: all 0.2s;
+}
+.button:hover {
+  transform: translateY(-0.25rem);
+}
+.button:active {
+  transform: translateY(-0.025rem);
 }
 
 .footer {
@@ -631,12 +655,12 @@ h1 {
   align-items: center;
   gap: 1.5rem;
   border-radius: 8px;
-  padding: 0.5rem 2rem;
 }
 .newsletter__icon {
   width: 3.2rem;
   height: auto;
   flex-shrink: 0;
+  margin-left: 2rem;
 }
 .newsletter__input {
   font-family: "Poppins", sans-serif;
@@ -650,17 +674,6 @@ h1 {
 }
 .newsletter__input::placeholder {
   color: rgb(121, 137, 158);
-}
-.newsletter__button {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-  background-color: rgb(41, 169, 225);
-  border-radius: 8px;
-  width: 15.4rem;
-  height: 6.8rem;
-  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
