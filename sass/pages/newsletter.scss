@@ -73,11 +73,6 @@
             color: $color-gray;
         }
 
-        &:focus-visible {
-            outline: 2px solid $color-dark-blue-1;
-            outline-offset: -2px;
-        }
-
     }
 
 }

@@ -500,6 +500,7 @@ h1 {
 
 .testimonial {
   margin-top: 15rem;
+  overflow-x: clip;
 }
 .testimonial__subtitle {
   font-family: "Poppins", sans-serif;
@@ -720,10 +721,6 @@ h1 {
 }
 .newsletter__input::placeholder {
   color: rgb(121, 137, 158);
-}
-.newsletter__input:focus-visible {
-  outline: 2px solid rgb(51, 65, 85);
-  outline-offset: -2px;
 }
 
 @media (max-width: 75em) {

@@ -1,6 +1,7 @@
 .testimonial {
 
     margin-top: 15rem;
+    overflow-x: clip;
 
     &__subtitle {
         font-family: $font-primary;
@@ -32,6 +33,7 @@
         height: 7rem;
         isolation: isolate;
         pointer-events: none;
+        
     }
 
     &__img {
